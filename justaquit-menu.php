@@ -57,6 +57,7 @@ Class JA_Menu {
 			'show_in_menu'       => true,
 			'query_var'          => true,
 			'rewrite'            => array( 'slug' => __('dish', 'jmenu') ),
+			'menu_icon'          => plugins_url( 'images/plate-icon.png', __FILE__ ),
 			'capability_type'    => 'post',
 			'has_archive'        => true,
 			'hierarchical'       => false,
@@ -205,5 +206,5 @@ Class JA_Menu {
 		die();
 	}
 }
-$init = new JA_Menu();
+new JA_Menu();
 ?>
